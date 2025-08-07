@@ -2,14 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-:root {
-  font-family: var(--font-jetbrainsMono), sans-serif;
-}
 @layer base {
   body {
-    @apply font-primary;
+    @apply font-primary bg-primary text-loading-loose;
 
   }
 }
