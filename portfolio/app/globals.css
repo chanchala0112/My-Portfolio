@@ -1,10 +1,106 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-@layer base {
-  body {
-    @apply font-primary ;
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  background: linear-gradient(to right, #1abc9c, #16a085);
+  color: white;
+}
 
-  }
+.hero-text h1 {
+  font-size: 48px;
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.hero-text p {
+  margin: 20px 0;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background: white;
+  color: #16a085;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btn-secondary {
+  border: 2px solid white;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background: #ddd;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #16a085;
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 60px 100px;
+  background: white;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: #16a085;
+  color: white;
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+/* PROJECTS SECTION */
+.projects {
+  padding: 60px 100px;
+  background: #f9f9f9;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 60px 100px;
+  background: #16a085;
+  color: white;
 }
