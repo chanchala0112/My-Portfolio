@@ -15,13 +15,13 @@ export default function Footer() {
         </ul>
 
         <div className="footer-socials">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://github.com/chanchala0112" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/chanchala-jeewanthi-21a319282/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="mailto:youremail@example.com">Email</a>
+          <a href="mailto:jeewanthichanchala321@gmail.com">Email</a>
         </div>
 
         <div className="footer-contact">
-          <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+          <p>Email: <a href="mailto:jeewanthichanchala321@gmail.com">jeewanthichanchala321@gmail.com</a></p>
           <p>Phone: +94 75 466 7226</p>
           <p>Location: Colombo, Sri Lanka</p>
         </div>
