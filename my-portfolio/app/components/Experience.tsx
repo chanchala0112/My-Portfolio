@@ -23,19 +23,16 @@ const experiences = [
 
 export default function Experience() {
     return (
-        <section id="experience" className="experience-section">
+        <section className="experience-section">
             <div className="section-container">
-                <h2 className="section-title">Experience</h2>
+                <h2 className="section-title">My Experience</h2>
                 <div className="experience-timeline">
                     {experiences.map((exp, index) => (
                         <div key={index} className="experience-item">
-                            <div className="experience-dot"></div>
-                            <div className="experience-content">
-                                <span className="experience-date">{exp.period}</span>
-                                <h3 className="experience-role">{exp.role}</h3>
-                                <h4 className="experience-company">{exp.company}</h4>
-                                <p className="experience-desc">{exp.description}</p>
-                            </div>
+                            <span className="experience-date">{exp.period}</span>
+                            <h3 className="experience-role">{exp.role}</h3>
+                            <h4 className="experience-company">{exp.company}</h4>
+                            <p className="experience-desc">{exp.description}</p>
                         </div>
                     ))}
                 </div>

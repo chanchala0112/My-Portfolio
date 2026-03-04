@@ -7,32 +7,41 @@ const projects = [
         description: "A cutting-edge platform for generating high-quality images using OpenAI's DALL-E 3 API.",
         link: "#",
         tags: ["React", "Next.js", "OpenAI"],
-        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4", // Placeholder video
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
     },
     {
         title: "EcoConnect Dashboard",
         description: "A real-time environmental monitoring dashboard with interactive data visualizations.",
         link: "#",
         tags: ["TypeScript", "D3.js", "Node.js"],
-        videoUrl: "https://www.w3schools.com/html/movie.mp4", // Placeholder video
+        videoUrl: "https://www.w3schools.com/html/movie.mp4",
     },
     {
         title: "Zenith E-Commerce",
         description: "A premium shopping experience with smooth transitions and a secure payment gateway.",
         link: "#",
         tags: ["Next.js", "Stripe", "Clerk"],
-        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4", // Placeholder video
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
     },
 ];
 
-export default function Projects() {
+interface ProjectsProps {
+    title?: string;
+    showFullHeader?: boolean;
+}
+
+export default function Projects({ title = "My Projects", showFullHeader = true }: ProjectsProps) {
     return (
         <section id="projects" className="projects-section">
             <div className="section-container">
-                <h2 className="section-title">My Projects</h2>
-                <p className="section-subtitle" style={{ textAlign: 'center', marginBottom: '4rem', color: 'var(--text-muted)' }}>
-                    A showcase of my recent work, featuring demos and technical breakdowns.
-                </p>
+                {showFullHeader && (
+                    <>
+                        <h2 className="section-title">{title}</h2>
+                        <p className="section-subtitle" style={{ textAlign: 'center', marginBottom: '4rem', color: 'var(--text-muted)' }}>
+                            A showcase of my recent work, featuring demos and technical breakdowns.
+                        </p>
+                    </>
+                )}
                 <div className="projects-grid">
                     {projects.map((project, index) => (
                         <div key={index} className="project-card">
